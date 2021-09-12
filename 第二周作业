@@ -1,0 +1,5 @@
+// 通过 errors.New() 响应错误
+errors.New(500, "USER_NAME_EMPTY", "user name is empty")
+
+// 通过 proto 生成的代码响应错误，并且包名应替换为自己生成代码后的 package name
+api.ErrorUserNotFound("user %s not found", "kratos")
